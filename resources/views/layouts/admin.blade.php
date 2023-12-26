@@ -17,7 +17,7 @@
     <link href="{{ asset('assets/css/material-dashboard.css?v=3.0.4')}}" rel="stylesheet">
     <link href="{{ asset('assets/css/nucleo-icons.css')}}" rel="stylesheet">
     <link href="{{ asset('assets/css/nucleo-svg.css')}}" rel="stylesheet">
-    <script>
+    {{-- <script>
       var ctx = document.getElementById("chart-bars").getContext("2d");
   
       new Chart(ctx, {
@@ -263,7 +263,7 @@
           },
         },
       });
-    </script>
+    </script> --}}
 </head>
 <body  class="g-sidenav-show  bg-gray-200">
 
