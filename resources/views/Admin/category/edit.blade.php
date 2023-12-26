@@ -22,7 +22,7 @@
                 <div class="col-md-12 mb-3">
                     <label for="">Description</label>
                     <textarea name="description"  rows="3" class="form-control p-2 border border-dark" >{{ $category->description }} </textarea>   
-                </div>    
+                {{-- </div>    
                 <div class="col-md-6 mb-3">
                     <label for="">Status</label>
                     <input type="checkbox"  class="border border-dark p-2" name="status" {{ $category->status == "1" ? "checked" : "" }}>
@@ -42,7 +42,7 @@
                 <div class="col-md-12 mb-3">
                     <label for="">Meta Description</label>
                     <textarea name="meta_description"  rows="3" class="form-control border border-dark p-2"> {{ $category->description }}</textarea> 
-                </div>    
+                </div>     --}}
                 @if ($category->image)
                     <img src="{{asset('upload/category/'.$category->image)}}" class="w-25 h-25" alt="no image">
                 @endif

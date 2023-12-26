@@ -14,10 +14,12 @@ class CategoriesController extends Controller
         $category = Category::all();
         return view('Admin.category.index', compact('category'));
     }
+
     public function add()
     {
         return view('Admin.category.add');
     }
+    
     public function insert(Request $request )
     {
         $category = new Category();
