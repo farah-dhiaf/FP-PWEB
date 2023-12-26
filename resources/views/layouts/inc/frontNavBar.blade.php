@@ -1,38 +1,35 @@
-<nav class="navbar navbar-expand-lg navbar-default navbar-dark fixed-top bg-custom-color" style="background: #411F20;">
+<nav class="navbar navbar-expand-lg navbar-default navbar-dark fixed-top">
   <div class="container-fluid  navbar-default ">
-      <div class="navbar-nav ms-auto flex">
-           <a class="nav-link  px-3 " href="{{url('category')}}">OUR MENU</a>
-           <a class="nav-link  px-3 " href="{{url('contact')}}">CONTACT US</a>
-           <a class="nav-link  px-3 " href="{{url('about')}}">ABOUT US</a>
-      </div>
-
-      <a class="navbar-brand flex" href="{{url('/')}}">
-         <img src="../images/logotulisan-putih.png" alt="logo"/>
-         </a>
+     <a class="navbar-brand" href="{{url('/')}}">Pain &  Gain</a>
    
      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
      <span class="navbar-toggler-icon"></span>
      </button>
      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-
+        <div class="navbar-nav ms-auto">
+           <a class="nav-link px-3 active" aria-current="page" href="/">Home</a>
+           <a class="nav-link  px-3 " href="{{url('category')}}">Categories</a>
+           <a class="nav-link  px-3 " href="{{url('contact')}}">Contact</a>
+           <a class="nav-link  px-3 " href="{{url('about')}}">About</a>
+        </div>
+        <div class="navbar-nav ms-auto justify-content-center">
          
-        <div class="navbar-nav ms-auto flex">
 
            @guest
            @if (Route::has('login'))
            <li class="nav-item">
-              <a class="nav-link cartblack" id="loginblack" style="font-color: white;" href="{{ route('login') }}">{{ __('Login') }}</a>
+              <a class="nav-link cartblack" id="loginblack" href="{{ route('login') }}">{{ __('Login') }}</a>
             </li>
             @endif
             @if (Route::has('register'))
             <li class="nav-item">
-               <a class="nav-link cartblack" id="loginblack" style="font-color: white;" href="{{ route('register') }}">{{ __('Register') }}</a>
+               <a class="nav-link cartblack" id="loginblack"  href="{{ route('register') }}">{{ __('Register') }}</a>
             </li>
             @endif
             @else
 
             <div class="input-group hello">
-               <form class="d-flex bg-dark w-100" action="{{url('searchProduct')}}" class="form-control" method="POST">
+               <form class="d-flex bg-transparent w-100" action="{{url('searchProduct')}}" class="form-control" method="POST">
                   @csrf
                   <div class="input-group">
                      <input name="product_name" required type="search" id="search_product" class="form-control bg-dark rounded-pill outline-none shadow-none border-0 "  placeholder="Search..." aria-label="Recipient's username" aria-describedby="button-addon2">
@@ -44,14 +41,14 @@
             <li class="nav-item dropdown">
               <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                <img
-            src="https://static.vecteezy.com/system/resources/previews/022/811/298/large_2x/cute-cat-kitty-animal-character-epitome-avatar-mascot-portrait-free-photo.jpeg"
+            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
             class="rounded-circle"
             height="22"
             alt="Portrait of a Woman"
             loading="lazy"
           />
               </a>
-              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" style="background: #411F20;">
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
 
                <a class="dropdown-item"> {{ Auth::user()->name }}</a>
               
