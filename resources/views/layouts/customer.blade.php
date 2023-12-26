@@ -47,7 +47,7 @@
 a
     {
         text-decoration: none !important;
-        color: black;
+        color: white;
 
     }
     
@@ -93,9 +93,10 @@ a
   text-decoration: none;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-start;
+  align-items: center;
   gap: 30px;
   flex-shrink: 0;
+  padding: 4px:
 }
 
 .navbar-brand {
@@ -146,11 +147,35 @@ a
   scroll-behavior: smooth;
 }
 
-.row {
+.rowfooter, .rowindex {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 10px;
   font-weight: 600;
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: start;
+}
+
+li {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+li a {
+  font-size: 22px;
+}
+
+li a:hover {
+  color: #A35D26;
+}
+
+.social-icons .h4 {
+  font-size: 32px;
 }
 
 .bg-custom-color {
@@ -190,6 +215,7 @@ a
 #loginblack
     {
       color: white !important;
+      padding-top: 10px:
     }
 
     </style>
