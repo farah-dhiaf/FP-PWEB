@@ -16,7 +16,7 @@
     </div>
     <div class="py-5">
         <div class="container">
-            <div class="row">
+            <div class="rowindex">
                
                     <a  href="{{url('/category')}}" class="card col-md-4 " style="border:none;">
                         <div class="card-body zoom postion-relative">
@@ -46,7 +46,7 @@
     </div>
     <div class="py-5" id="products">
         <div class="container">
-            <div class="row d-flex flex-wrap">
+            <div class="rowindex d-flex flex-wrap">
                 @foreach ($product as $item )
                 <div class="col-md-3 mt-2">
                              <a  class="link-dark"  href="{{url(asset('view-product/'.$item->slug))}}">
