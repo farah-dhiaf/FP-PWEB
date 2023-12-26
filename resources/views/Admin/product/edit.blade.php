@@ -27,10 +27,10 @@
                     <label for="">Description</label>
                     <textarea name="description"  rows="3" class="form-control p-2 border border-dark" >{{ $product->description }} </textarea>   
                 </div>
-                <div class="col-md-6 mb-3">
+                {{-- <div class="col-md-6 mb-3">
                     <label for="">Original Price</label>
                     <input type="number" class="form-control border border-dark p-2" name="original_price" value="{{ $product->original_price }}">
-                </div> 
+                </div>  --}}
                 <div class="col-md-6 mb-3">
                     <label for="">Selling Price</label>
                     <input type="number" class="form-control border border-dark p-2" name="selling_price" value="{{ $product->selling_price }}">
@@ -38,7 +38,7 @@
                 <div class="col-md-6 mb-3">
                     <label for="">Quantity</label>
                     <input type="number" class="form-control border border-dark p-2" name="qty" value="{{ $product->qty }}">
-                </div> 
+                {{-- </div> 
                 <div class="col-md-6 mb-3">
                     <label for="">Tax</label>
                     <input type="number" class="form-control border border-dark p-2" name="tax" value="{{ $product->tax }}">
@@ -62,7 +62,7 @@
                 <div class="col-md-12 mb-3">
                     <label for="">Meta Description</label>
                     <textarea name="meta_description"  rows="3" class="form-control border border-dark p-2"> {{ $product->description }}</textarea> 
-                </div>    
+                </div>     --}}
                 @if ($product->image)
                     <img src="{{asset('upload/product/'.$product->image)}}" class="w-25 h-25" alt="no image">
                 @endif

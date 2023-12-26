@@ -34,7 +34,7 @@
                 <div class="col-md-6 mb-3">
                     <label for="">Meta Title</label>
                     <input type="text" class="form-control border border-dark p-2" name="meta_title" value="{{ $category->meta_title }}">
-                </div>    
+                </div>    s
                 <div class="col-md-12 mb-3">
                     <label for="">Meta Keyword</label>
                     <textarea name="meta_keyword"  rows="3" class="form-control border border-dark p-2"> {{ $category->meta_keyword }}</textarea> 
