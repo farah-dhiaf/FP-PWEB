@@ -2,7 +2,7 @@
 
 
 @section('title')
-   SUFAZ CAFE
+   Sufaz Cafe
 @endsection
 
 @section('content')
@@ -10,7 +10,7 @@
     <div class="py-2">
         <div class="container  d-flex align-items-center justify-content-around p-4">
             <div class="border border-dark " style="width:20rem; background:black;"></div>
-            <h3 style="font-size: ; font-weight:bolder; padding:5px;">Our Menus</h3>
+            <h3 style="font-size: ; font-weight:bolder; padding:5px;">CATEGORIES</h3>
             <div class="border border-dark " style="width:20rem; background:black;"></div>
         </div>
     </div>
@@ -20,7 +20,7 @@
                
                     <a  href="{{url('/category')}}" class="card col-md-4 " style="border:none;">
                         <div class="card-body zoom postion-relative">
-                            <img src="{{asset('images/accessories.jpg')}}"  class="w-100 lazy rounded" height="200px"   alt="">
+                            <img src="{{asset('images/SNACKS.jpg')}}"  class="w-100 lazy rounded" height="200px"   alt="">
                             <div class="text-light position-absolute top-50 start-50 translate-middle">
                                 <h4 style="letter-spacing:3px; ">SNACKS</h4>
                             </div>
@@ -28,7 +28,7 @@
                     </a>
                     <a href="{{url('/category')}}"   class="card col-md-4 " style="border:none;">
                         <div class="card-body zoom postion-relative">
-                            <img src="{{asset('images/equipments.jpg')}}"  class="w-100 lazy rounded" height="200px"  alt="">
+                            <img src="{{asset('images/BEVERAGES.jpg')}}"  class="w-100 lazy rounded" height="200px"  alt="">
                             <div class="text-light position-absolute top-50 start-50 translate-middle">
                                 <h4 style="letter-spacing:3px; ">BEVERAGES</h4>
                             </div>
@@ -41,7 +41,7 @@
     
     <div class="container  d-flex align-items-center justify-content-around p-4">
         <div class="border border-dark " style="width:20rem; background:black;"></div>
-        <h3 style="font-size: ; font-weight:bolder; padding:5px;">NEW ARRIVALS</h3>
+        <h3 style="font-size: ; font-weight:bolder; padding:5px;">OUR MENU</h3>
         <div class="border border-dark " style="width:20rem; background:black;"></div>
     </div>
     <div class="py-5" id="products">
@@ -54,8 +54,8 @@
                                 <img src="{{asset('upload/product/'.$item->image)}}" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h6 class="card-title">{{$item->name}}</h6>
-                                        
-                                        <span href="#" class=" pe-auto float-start">Rp {{$item->selling_price}}</span>
+                                        <span href="#" class=" pe-auto float-start">RS <s>{{$item->original_price}}</s></span>
+                                        <span href="#" class=" pe-auto float-end">RS {{$item->selling_price}}</span>
                                 </div>
                             </div>
                         </a>
