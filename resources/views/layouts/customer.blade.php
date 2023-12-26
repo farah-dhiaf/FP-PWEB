@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="{{asset('frontend/js/jquery.js')}}"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
@@ -28,11 +28,11 @@
     {{-- <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> --}}
     <style>
       *{
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Montserrat', sans-serif;
     }
     .cartblack i
     {
-      color: black !important;
+      color: white !important;
     }
   
 
@@ -47,7 +47,7 @@
 a
     {
         text-decoration: none !important;
-        color: black;
+        color: white;
 
     }
     
@@ -67,8 +67,45 @@ a
 }
 .navbar>.container-fluid a
 {
-  color: rgba(234,88,11,255) !important;
-  font-size:1.2rem !important;
+  color: white !important;
+  font-size: 15px !important;
+  font-weight: 600;
+}
+
+.container-fluid {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 7.5px 1px 7.5px;
+  gap: 160px;
+  flex-shrink: 0;
+  background: #411F20;
+  box-shadow: -0.25px 3.75px 0px 0.25px rgba(0, 0, 0, 0.01) inset;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.navbar-nav {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  flex-shrink: 0;
+  padding: 4px:
+}
+
+.navbar-brand {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 30px;
+  flex-shrink: 0;
+  padding: 9px 0px 9px 0px;
 }
 
 .zoom:hover
@@ -110,18 +147,54 @@ a
   scroll-behavior: smooth;
 }
 
+.rowfooter, .rowindex {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+  font-weight: 600;
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: start;
+}
+
+li {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+li a {
+  font-size: 22px;
+}
+
+li a:hover {
+  color: #A35D26;
+}
+
+.social-icons .h4 {
+  font-size: 32px;
+}
+
+.bg-custom-color {
+  background-color: #411F20;
+}
+
 .backgroundfooter
 {
-  background:rgba(234,88,11,255) !important;
+  background: #411F20 !important;
 }
 .backgroundofroutes
 {
-  background:rgba(234,88,11,255) !important;
+  background:#411F20 !important;
   color: white !important;
 }
 .backgroundofroutes a
 {
   color: white !important;
+  font-weight: 500;
 }
  .hello 
 {
@@ -137,13 +210,13 @@ a
 }
 .hello input::placeholder
 {
-  color:rgba(234,88,11,255)  !important;
+  color: rgba(234,88,11,255)  !important;
 } 
 #loginblack
     {
-      color: black !important;
+      color: white !important;
+      padding-top: 10px:
     }
-
 
     </style>
  
@@ -195,9 +268,9 @@ a
         $(window).scroll(function(){
         var scroll = $(window).scrollTop();
         if(scroll < 50){
-            $('.fixed-top').css('background', 'transparent');
+            $('.fixed-top').css('background', '#411F20');
         } else{
-            $('.fixed-top').css('background', 'white');
+            $('.fixed-top').css('background', '#411F20');
             $('.navbar>.container-fluid a').css('color', 'rgba(37,33,34,255)');
         }
     });
