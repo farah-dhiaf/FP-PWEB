@@ -33,11 +33,11 @@ class CategoriesController extends Controller
         $category->name = $request->input('name');
         $category->slug = $request->input('slug');
         $category->description = $request->input('description');
-        $category->status = $request->input('status')   == True ? '1' : '0';
-        $category->popular = $request->input('popular')  == True ? '1' : '0';
-        $category->meta_title = $request->input('meta_title');
-        $category->meta_keyword = $request->input('meta_keyword');
-        $category->meta_description = $request->input('meta_description');
+        // $category->status = $request->input('status')   == True ? '1' : '0';
+        // $category->popular = $request->input('popular')  == True ? '1' : '0';
+        // $category->meta_title = $request->input('meta_title');
+        // $category->meta_keyword = $request->input('meta_keyword');
+        // $category->meta_description = $request->input('meta_description');
 
         $category->save();
         return redirect('/categories')->with('status',"Category Added Successfully");
@@ -68,11 +68,11 @@ class CategoriesController extends Controller
         $category->name = $request->input('name');
         $category->slug = $request->input('slug');
         $category->description = $request->input('description');
-        $category->status = $request->input('status')   == True ? '1' : '0';
-        $category->popular = $request->input('popular')  == True ? '1' : '0';
-        $category->meta_title = $request->input('meta_title');
-        $category->meta_keyword = $request->input('meta_keyword');
-        $category->meta_description = $request->input('meta_description');
+        // $category->status = $request->input('status')   == True ? '1' : '0';
+        // $category->popular = $request->input('popular')  == True ? '1' : '0';
+        // $category->meta_title = $request->input('meta_title');
+        // $category->meta_keyword = $request->input('meta_keyword');
+        // $category->meta_description = $request->input('meta_description');
         
         $category->update();
         return redirect('/categories')->with('status',"Category Updated Successfully");

@@ -14,11 +14,11 @@ class Category extends Model
         'name',
         'slug',
         'description',
-        'status',
-        'popular',
-        'image',
-        'meta_title',
-        'meta_description',
-        'meta_keyword'
+        // 'status',
+        // 'popular',
+        // 'image',
+        // 'meta_title',
+        // 'meta_description',
+        // 'meta_keyword'
     ];
 }

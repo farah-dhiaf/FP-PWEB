@@ -15,16 +15,16 @@ class Product extends Model
         'slug',
         'small_description',
         'description',
-        'original_price',
+        // 'original_price',
         'selling_price',
         'image',
         'qty',
-        'tax',
-        'status',
-        'trending',
-        'meta_title',
-        'meta_keyword',
-        'meta_description'
+        // 'tax',
+        // 'status',
+        // 'trending',
+        // 'meta_title',
+        // 'meta_keyword',
+        // 'meta_description'
     ];
 
     public function category()

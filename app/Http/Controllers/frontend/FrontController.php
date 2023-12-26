@@ -11,22 +11,23 @@ class FrontController extends Controller
 {
     public function mainpage() 
     {
-        $category = category::where('popular','1')->take(15)->get();
-        $product = Product::where('trending','1')->take(12)->get();
+        $category = Category::all();
+        $product = Product::all();
        
         return view('frontend.index' , compact('category', 'product'));
     }
     public function category()
     {
-        $category = Category::where('status','0')->get();
+        $category = Category::all();
         return view('frontend.category' , compact('category'));
     }
+
     public function viewCategory($slug)
     {
         if(Category::where('slug',$slug)->exists())
         {
             $category = Category::where('slug',$slug)->first();
-            $product = Product::where('cate_id',$category->id)->where('status','0')->get();
+            $product = Product::where('cate_id',$category->id)->get();
             return view('frontend.products.index', compact('category','product'));
         }
         else
