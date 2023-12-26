@@ -32,31 +32,31 @@
                                 </div>
                                 <div class="col-md-6  my-2">
                                     <label for="email">Phone Number</label>
-                                    <input type="number" name="phoneno" class="form-control"  value="{{Auth::user()->phoneno}}"  placeholder="92313587420" required>
+                                    <input type="number" name="phoneno" class="form-control"  value="{{Auth::user()->phoneno}}"  placeholder="08123456789" required>
                                 </div>
                                 <div class="col-md-6  my-2">
-                                    <label for="email">Address 1</label>
-                                    <input type="text" name="address1" class="form-control"  value="{{Auth::user()->address1}}"  placeholder="Enter Address 1" required>
+                                    <label for="email">Address</label>
+                                    <input type="text" name="address1" class="form-control"  value="{{Auth::user()->address1}}"  placeholder="Enter Your Address" required>
                                 </div>
                                 <div class="col-md-6  my-2">
-                                    <label for="email">Address 2</label>
-                                    <input type="text" name="address2" class="form-control" value="{{Auth::user()->address2}}"   placeholder="Enter Address 2" required>
+                                    <label for="email">More Detail</label>
+                                    <input type="text" name="address2" class="form-control" value="{{Auth::user()->address2}}"   placeholder="e.g Number or Floor" required>
+                                </div>
+                                <div class="col-md-6  my-2">
+                                    <label for="email">Subdistrict</label>
+                                    <input type="text" name="city" class="form-control" value="{{Auth::user()->city}}"   placeholder="e.g Serpong" required>
                                 </div>
                                 <div class="col-md-6  my-2">
                                     <label for="email">City</label>
-                                    <input type="text" name="city" class="form-control" value="{{Auth::user()->city}}"   placeholder="Islamabad" required>
-                                </div>
-                                <div class="col-md-6  my-2">
-                                    <label for="email">State</label>
-                                    <input type="text" name="state" class="form-control"  value="{{Auth::user()->state}}"  placeholder="Punjab" required>
+                                    <input type="text" name="state" class="form-control"  value="{{Auth::user()->state}}"  placeholder="e.g Tangerang Selatan" required>
                                 </div>
                                 <div class="col-md-6  my-2">
                                     <label for="email">Country</label>
-                                    <input type="text" name="country" class="form-control" value="{{Auth::user()->country}}"   placeholder="Pakistan" required>
+                                    <input type="text" name="country" class="form-control" value="{{Auth::user()->country}}"   placeholder="e.g Indonesia" required>
                                 </div>
                                 <div class="col-md-6  my-2">
-                                    <label for="email">Zip Code</label>
-                                    <input type="number" name="pincode" class="form-control" value="{{Auth::user()->pincode}}"   placeholder="Punjab" required>
+                                    <label for="email">Postal Code</label>
+                                    <input type="number" name="pincode" class="form-control" value="{{Auth::user()->pincode}}"   placeholder="15326" required>
                                 </div>
                             </div>
                         </div>
