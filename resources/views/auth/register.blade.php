@@ -1,6 +1,23 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+  .btn-outline-primary{
+      background-color: transparent;
+      color: #411F20;
+      border-color: #411F20;
+}
+
+.btn-outline-primary:hover{
+      background-color: #411F20;";
+      color: white;
+      border-color: #411F20;
+}
+
+.h1{
+  color: #411F20;
+}
+</style>
 <div class="container h-100">
   <div class="row d-flex justify-content-center align-items-center h-100">
     <div class="col-lg-6 col-xl-11">
@@ -9,7 +26,7 @@
           <div class="row justify-content-center">
             <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
 
-              <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
+              <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">SIGN UP</p>
 
               <form class="mx-1 mx-md-4" method="POST" action="{{ route('register') }}">
                 @csrf

@@ -13,8 +13,6 @@ use App\Http\Controllers\frontend\CartController;
 use App\Http\Controllers\frontend\CheckoutController;
 use App\Http\Controllers\frontend\UserController;
 use App\Http\Controllers\frontend\contactComplains;
-use Illuminate\support\Facades\Mail;
-use App\Mail\WelcomeMail;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -39,11 +37,6 @@ Route::get('view-product/{prod_slug}',[FrontController::class ,  'eachProdView']
 
 
 Auth::routes(['verify' => true]);
-
-Route::get('/email', function(){
-    Mail::to('mrmoiz1.dev@gmail.com')->send(new WelcomeMail());
-    return new WelcomeMail();
-});
 
 
 Route::post('add-to-cart',[CartController::class,'addProduct']);

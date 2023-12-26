@@ -16,8 +16,8 @@
                         <div class="col-md-4 ">
                             <a href="{{url(asset('view-category/'.$cate->slug))}}">
                                 <div class="card-body zoom postion-relative" >
-                                    <img src="{{asset('upload/category/'.$cate->image)}}"   class="w-100 lazy rounded" height="200px"  alt="">
-                                    <div class="text-light  position-absolute top-50 start-50  translate-middle">
+                                    <img src="{{asset('upload/category/'.$cate->image)}}" class="w-100 lazy rounded" height="200px"  alt="">
+                                    <div class="text-light position-absolute top-50 start-50  translate-middle">
                                         <h4 style="letter-spacing:3px; ">{{$cate->name}}</h4>
                                     </div>
                                 </div>

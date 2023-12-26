@@ -19,6 +19,22 @@ height: calc(100% - 73px);
 height: 100%;
 }
 }
+
+.btn-outline-primary{
+      background-color: transparent;
+      color: #411F20;
+      border-color: #411F20;
+}
+
+.btn-outline-primary:hover{
+      background-color: #411F20;";
+      color: white;
+      border-color: #411F20;
+}
+
+.h1{
+  color: #411F20;
+}
 </style>
 <section class="vh-100">
   <div class="container-fluid h-custom">
@@ -28,11 +44,12 @@ height: 100%;
               class="img-fluid" alt="Sample image">
         </div> --}}
         <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+           <!-- <div class="d-flex flex-row align-items-center justify-content-center">
+             <h1 >{{ __('Login') }}</h1>
+           </div> -->
+           <p class="text-center h1 fw-bold mb-4 mx-1 mx-md-4 mt-4">LOGIN</p>
            <form action="{{ route('login') }}" method="POST">
               @csrf
-              <div class="d-flex flex-row align-items-center justify-content-center">
-                <h1 >{{ __('Login') }}</h1>
-              </div>
               <br>
               <!-- Email input -->
               <div class="form-outline mb-4">
@@ -65,12 +82,9 @@ height: 100%;
                       {{ __('Remember Me') }}
                     </label>
                  </div>
-                 @if (Route::has('password.request'))
-                 <a href="{{ route('password.request') }}" class="text-body">Forgot password?</a>
-                  @endif
               </div>
               <div class="d-flex my-4 justify-content-center flex-column mx-4 mb-3 mb-lg-4">
-               <button type="submit" class="btn btn-outline-primary btn-lg">{{ __('login') }}</button>
+               <button type="submit" class="btn btn-outline-primary btn-lg">{{ __('Login') }}</button>
                <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="{{url('/register')}}"
                  class="link-danger">Register</a></p>
                </div>
