@@ -21,26 +21,6 @@
                     <label for="">Description</label>
                     <textarea name="description"  rows="3" class="form-control border border-dark"></textarea>   
                 </div>    
-                {{-- <div class="col-md-6 mb-3">
-                    <label for="">Status</label>
-                    <input type="checkbox"  class="border border-dark" name="status">
-                </div>    
-                <div class="col-md-6 mb-3">
-                    <label for="">Popular</label>
-                    <input type="checkbox"  class="border border-dark" name="popular">
-                </div>    
-                <div class="col-md-6 mb-3">
-                    <label for="">Meta Title</label>
-                    <input type="text" class="form-control border border-dark" name="meta_title">
-                </div>    
-                <div class="col-md-12 mb-3">
-                    <label for="">Meta Keyword</label>
-                    <textarea name="meta_keyword"  rows="3" class="form-control border border-dark"></textarea> 
-                </div>    
-                <div class="col-md-12 mb-3">
-                    <label for="">Meta Description</label>
-                    <textarea name="meta_description"  rows="3" class="form-control border border-dark"></textarea> 
-                </div>     --}}
                 <div class="col-md-12 mb-3">
                    <input type="file" name="image"  class="form-control border border-dark" >
                 </div>    
