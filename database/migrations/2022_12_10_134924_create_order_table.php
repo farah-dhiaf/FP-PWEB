@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('order', function (Blueprint $table) {
            
-            $table->id();
-            $table->string('user_id');
+            $table->id('id');
+            $table->unsignedBigInteger('user_id');
             $table->string('fname');
             $table->string('lname');
             $table->string('email');
@@ -32,6 +32,8 @@ return new class extends Migration
             $table->string('message')->nullable();
             $table->string('tracking_no');
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
