@@ -7,7 +7,7 @@
       </div>
 
       <a class="navbar-brand flex" href="{{url('/')}}">
-         <img src="../images/logotulisan-putih.png" alt="logo"/>
+         <img src="../images/logotulisan-putih.png" alt="logo" style="margin-left: 130px;"/>
          </a>
    
      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

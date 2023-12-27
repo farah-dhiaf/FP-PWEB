@@ -31,7 +31,6 @@
                                     <div class="card-body">
                                         <h5>{{$prod->name}}</h5>
                                         <span class="float-start">Rp {{ $prod->selling_price }}</span>
-                                        <span class="float-end">Rp<s>{{ $prod->selling_price }}</s></span>
                                     </div>
                                 </div>
                             </a>
